@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hacked by Jonathan Marc St Vil</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    background: black;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Encryption animation background */
+  #encryption-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 0;
+    color: #003300;
+    font-size: 12px;
+    line-height: 14px;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollUp 30s linear infinite;
+  }
+
+  @keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+
+  /* Main container */
+  .container {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  /* Hacker icon */
+  .hacker-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem auto;
+    fill: #00ff00;
+    filter: drop-shadow(0 0 5px #00ff00);
+  }
+
+  /* Skull glitch icons container */
+  .skulls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 3rem;
+  }
+
+  .skull {
+    width: 60px;
+    height: 60px;
+    fill: #00ff00;
+    filter: drop-shadow(0 0 3px #00ff00);
+    position: relative;
+    animation: glitch 2s infinite;
+  }
+
+  .skull:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .skull:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  /* Glitch effect */
+  @keyframes glitch {
+    0% {
+      clip-path: inset(0 0 0 0);
+      transform: translate(0);
+      filter: drop-shadow(0 0 3px #00ff00);
+    }
+    20% {
+      clip-path: inset(10% 0 85% 0);
+      transform: translate(-2px, -2px);
+      filter: drop-shadow(0 0 6px #00ff00);
+    }
+    40% {
+      clip-path: inset(85% 0 10% 0);
+      transform: translate(2px, 2px);
+      filter: drop-shadow(0 0 3px #00ff00);
+    }
+    60% {
+      clip-path: inset(10% 0 85% 0);
+      transform: translate(-2px, 2px);
+      filter: drop-shadow(0 0 6px #00ff00);
+    }
+    80% {
+      clip-path: inset(85% 0 10% 0);
+      transform: translate(2px, -2px);
+      filter: drop-shadow(0 0 3px #00ff00);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+      transform: translate(0);
+      filter: drop-shadow(0 0 3px #00ff00);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="encryption-bg"></div>
+
+<div class="container">
+  <!-- Hacker icon SVG -->
+  <svg class="hacker-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+    <path d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z"/>
+    <path d="M20 24h24v4H20zM20 36h24v4H20z"/>
+    <circle cx="22" cy="28" r="4"/>
+    <circle cx="42" cy="28" r="4"/>
+    <path d="M32 38c-6 0-8 4-8 4h16s-2-4-8-4z"/>
+  </svg>
+
+  <h1>YOU WAS HACKED BY JONATHAN MARC ST VIL</h1>
+  <h2>The truth will be revelated soon</h2>
+  <p>this operation is irrevesible, i have now illimited access to your device.</p>
+
+  <div class="skulls" aria-hidden="true">
+    <!-- Skull SVG icons -->
+    <svg class="skull" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z"/>
+      <circle cx="22" cy="28" r="4"/>
+      <circle cx="42" cy="28" r="4"/>
+      <path d="M20 44h24v4H20z"/>
+    </svg>
+    <svg class="skull" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z"/>
+      <circle cx="22" cy="28" r="4"/>
+      <circle cx="42" cy="28" r="4"/>
+      <path d="M20 44h24v4H20z"/>
+    </svg>
+    <svg class="skull" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 2C15.4 2 2 15.4 2 32s13.4 30 30 30 30-13.4 30-30S48.6 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z"/>
+      <circle cx="22" cy="28" r="4"/>
+      <circle cx="42" cy="28" r="4"/>
+      <path d="M20 44h24v4H20z"/>
+    </svg>
+  </div>
+</div>
+
+<script>
+  // Generate random alphanumeric characters for encryption background
+  const encryptionBg = document.getElementById('encryption-bg');
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  const lines = 100;
+  const charsPerLine = 80;
+
+  function randomLine() {
+    let line = '';
+    for (let i = 0; i < charsPerLine; i++) {
+      line += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return line;
+  }
+
+  function generateEncryptionText() {
+    let text = '';
+    for (let i = 0; i < lines; i++) {
+      text += randomLine() + '\n';
+    }
+    encryptionBg.textContent = text;
+  }
+
+  generateEncryptionText();
+
+  // Refresh encryption text every 10 seconds for dynamic effect
+  setInterval(generateEncryptionText, 10000);
+</script>
+
+</body>
+</html>
